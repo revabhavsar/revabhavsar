@@ -1,65 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 290" width="260" height="290">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280" width="280" height="280">
   <defs>
-    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#090E17"/>
-      <stop offset="100%" stop-color="#04070C"/>
+    <linearGradient id="slotBgCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C16"/>
+      <stop offset="100%" stop-color="#04070D"/>
     </linearGradient>
-    <linearGradient id="badgeCyan" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00F0FF"/>
-      <stop offset="100%" stop-color="#0080FF"/>
-    </linearGradient>
-    <filter id="bglow">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
   </defs>
 
   <style>
-    .b-brand { font-family: 'Segoe UI', sans-serif; font-weight: 800; font-size: 11px; letter-spacing: 2px; fill: #64748B; }
-    .b-type { font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 11px; letter-spacing: 2px; fill: #00F0FF; }
-    .b-title { font-family: 'Montserrat', 'Segoe UI', sans-serif; font-weight: 800; font-size: 15px; letter-spacing: 1px; fill: #FFFFFF; }
-    .b-sub { font-family: 'Fira Code', monospace; font-size: 8.5px; letter-spacing: 1.5px; fill: #00FFA3; }
-    .b-note { font-family: 'Fira Code', monospace; font-size: 7.5px; letter-spacing: 0.8px; fill: #475569; }
+    .slot-meta { font-family: 'Fira Code', 'Consolas', monospace; font-size: 9px; fill: #6E88B5; letter-spacing: 1px; }
+    .slot-tag { font-family: 'Segoe UI', -apple-system, sans-serif; font-weight: 700; font-size: 11px; fill: #00F0FF; letter-spacing: 2px; }
+    .slot-title { font-family: 'Montserrat', 'Segoe UI', sans-serif; font-weight: 800; font-size: 14px; fill: #FFFFFF; letter-spacing: 0.5px; }
+    .slot-issuer { font-family: 'Segoe UI', sans-serif; font-weight: 600; font-size: 10px; fill: #94A3B8; letter-spacing: 1.5px; }
+    .slot-warn { font-family: 'Fira Code', monospace; font-size: 8px; fill: #F59E0B; letter-spacing: 0.8px; font-weight: 600; }
+    .slot-file { font-family: 'Fira Code', monospace; font-size: 8px; fill: #38BDF8; letter-spacing: 0.5px; }
   </style>
 
-  <!-- Housing Frame -->
-  <rect x="5" y="5" width="250" height="280" rx="12" fill="url(#cardBg)" stroke="#162942" stroke-width="1.5"/>
-  <rect x="5" y="5" width="250" height="280" rx="12" fill="none" stroke="#00F0FF" stroke-opacity="0.25" stroke-width="1"/>
+  <!-- Housing Frame with Dashed Border (Unambiguous Placeholder) -->
+  <rect x="6" y="6" width="268" height="268" rx="10" fill="url(#slotBgCyan)" stroke="#162942" stroke-width="1.5"/>
+  <rect x="12" y="12" width="256" height="256" rx="8" fill="none" stroke="#00F0FF" stroke-width="1.5" stroke-dasharray="6,4" stroke-opacity="0.6"/>
 
-  <!-- Corner Tech Brackets -->
-  <path d="M 5 22 L 5 5 L 22 5" fill="none" stroke="#00F0FF" stroke-width="2"/>
-  <path d="M 238 5 L 255 5 L 255 22" fill="none" stroke="#00F0FF" stroke-width="2"/>
-  <path d="M 5 268 L 5 285 L 22 285" fill="none" stroke="#00F0FF" stroke-width="2"/>
-  <path d="M 238 285 L 255 285 L 255 268" fill="none" stroke="#00F0FF" stroke-width="2"/>
+  <!-- Corner Brackets -->
+  <path d="M 6 22 L 6 6 L 22 6" fill="none" stroke="#00F0FF" stroke-width="2"/>
+  <path d="M 258 6 L 274 6 L 274 22" fill="none" stroke="#00F0FF" stroke-width="2"/>
+  <path d="M 6 258 L 6 274 L 22 274" fill="none" stroke="#00F0FF" stroke-width="2"/>
+  <path d="M 258 274 L 274 274 L 274 258" fill="none" stroke="#00F0FF" stroke-width="2"/>
 
-  <!-- Top Credential Tier Header -->
-  <rect x="30" y="16" width="200" height="20" rx="4" fill="#00F0FF" fill-opacity="0.1" stroke="#00F0FF" stroke-width="0.8"/>
-  <text x="130" y="30" class="b-type" text-anchor="middle">CERTIFIED ASSOCIATE</text>
+  <!-- Slot Header -->
+  <text x="140" y="32" class="slot-tag" text-anchor="middle">CERTIFIED ASSOCIATE</text>
+  <line x1="30" y1="40" x2="250" y2="40" stroke="#162942" stroke-width="1"/>
 
-  <!-- Unity 3D Hexagon Emblem Motif -->
-  <g transform="translate(130, 96)">
-    <!-- Hexagon Outer -->
-    <polygon points="0,-45 39,-22.5 39,22.5 0,45 -39,22.5 -39,-22.5" fill="#0D1826" stroke="#00F0FF" stroke-width="1.8" filter="url(#bglow)"/>
-    <!-- Inner Geometric Cube -->
-    <polygon points="0,-24 21,-12 21,12 0,24 -21,12 -21,-12" fill="url(#badgeCyan)" fill-opacity="0.25" stroke="#00FFA3" stroke-width="1.2"/>
-    <line x1="0" y1="0" x2="0" y2="24" stroke="#00FFA3" stroke-width="1.2"/>
-    <line x1="0" y1="0" x2="-21" y2="-12" stroke="#00FFA3" stroke-width="1.2"/>
-    <line x1="0" y1="0" x2="21" y2="-12" stroke="#00FFA3" stroke-width="1.2"/>
-    <circle cx="0" cy="0" r="3" fill="#FFFFFF"/>
+  <!-- Center Placeholder Target Area -->
+  <g transform="translate(140, 100)">
+    <!-- Target Box -->
+    <rect x="-45" y="-35" width="90" height="70" rx="6" fill="#0D1A2E" stroke="#00F0FF" stroke-width="1" stroke-dasharray="4,3" stroke-opacity="0.5"/>
+    <!-- Technical Crosshair -->
+    <line x1="-55" y1="0" x2="55" y2="0" stroke="#00F0FF" stroke-width="0.8" stroke-opacity="0.3"/>
+    <line x1="0" y1="-45" x2="0" y2="45" stroke="#00F0FF" stroke-width="0.8" stroke-opacity="0.3"/>
+    <!-- Upload Symbol -->
+    <path d="M 0 -12 L 0 10 M -8 -4 L 0 -12 L 8 -4" fill="none" stroke="#00FFA3" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-14" y1="14" x2="14" y2="14" stroke="#00FFA3" stroke-width="2" stroke-linecap="round"/>
+    <!-- Text Inside Box -->
+    <text x="0" y="27" class="slot-meta" text-anchor="middle" font-size="7.5" fill="#38BDF8">AWAITING PNG</text>
   </g>
 
-  <!-- Credential Details -->
-  <text x="130" y="168" class="b-brand" text-anchor="middle">UNITY TECHNOLOGIES</text>
-  <text x="130" y="190" class="b-title" text-anchor="middle">GAME DEVELOPER</text>
-  <text x="130" y="208" class="b-sub" text-anchor="middle">● VERIFIED CREDENTIAL</text>
+  <!-- Credential Details (Accurate Text) -->
+  <text x="140" y="162" class="slot-issuer" text-anchor="middle">UNITY TECHNOLOGIES</text>
+  <text x="140" y="182" class="slot-title" text-anchor="middle">GAME DEVELOPER</text>
+  <text x="140" y="198" class="slot-meta" text-anchor="middle" fill="#00FFA3">● EXAM QUALIFIED</text>
 
-  <!-- Divider -->
-  <line x1="30" y1="225" x2="230" y2="225" stroke="#162942" stroke-width="1"/>
+  <!-- Notice Divider -->
+  <line x1="30" y1="212" x2="250" y2="212" stroke="#162942" stroke-width="1"/>
 
-  <!-- Metadata / User guide placeholder note -->
-  <text x="130" y="246" class="b-note" text-anchor="middle">PLACE YOUR CREDLY BADGE PNG AT:</text>
-  <text x="130" y="260" class="b-note" fill="#38BDF8" text-anchor="middle">associate-game-developer.png</text>
+  <!-- Placeholder Disclaimer & Filename instructions -->
+  <text x="140" y="230" class="slot-warn" text-anchor="middle">[ PLACEHOLDER SLOT ]</text>
+  <text x="140" y="244" class="slot-file" text-anchor="middle">DROP CREDLY PNG TO:</text>
+  <text x="140" y="256" class="slot-file" text-anchor="middle" fill="#00F0FF">associate-game-developer.png</text>
 </svg>

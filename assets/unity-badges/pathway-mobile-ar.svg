@@ -1,58 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 270" width="240" height="270">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" width="260" height="260">
   <defs>
-    <linearGradient id="pBgAR" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="pSlotBgAR" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0E0A17"/>
       <stop offset="100%" stop-color="#06040A"/>
     </linearGradient>
-    <linearGradient id="pARGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00F0FF"/>
-      <stop offset="100%" stop-color="#9D4EDD"/>
-    </linearGradient>
-    <filter id="arGlow">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
   </defs>
 
   <style>
-    .p-brand { font-family: 'Segoe UI', sans-serif; font-weight: 800; font-size: 10px; letter-spacing: 2px; fill: #64748B; }
-    .p-tag { font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 10px; letter-spacing: 2px; fill: #00F0FF; }
-    .p-title { font-family: 'Montserrat', 'Segoe UI', sans-serif; font-weight: 800; font-size: 13px; letter-spacing: 1px; fill: #FFFFFF; }
-    .p-status { font-family: 'Fira Code', monospace; font-size: 8px; letter-spacing: 1.5px; fill: #38BDF8; }
-    .p-note { font-family: 'Fira Code', monospace; font-size: 7px; fill: #475569; }
+    .p-meta { font-family: 'Fira Code', 'Consolas', monospace; font-size: 8.5px; fill: #6E88B5; letter-spacing: 1px; }
+    .p-tag { font-family: 'Segoe UI', -apple-system, sans-serif; font-weight: 700; font-size: 10px; fill: #00F0FF; letter-spacing: 2px; }
+    .p-title { font-family: 'Montserrat', 'Segoe UI', sans-serif; font-weight: 800; font-size: 13px; fill: #FFFFFF; letter-spacing: 0.5px; }
+    .p-issuer { font-family: 'Segoe UI', sans-serif; font-weight: 600; font-size: 9.5px; fill: #94A3B8; letter-spacing: 1.5px; }
+    .p-warn { font-family: 'Fira Code', monospace; font-size: 7.5px; fill: #F59E0B; letter-spacing: 0.8px; font-weight: 600; }
+    .p-file { font-family: 'Fira Code', monospace; font-size: 7.5px; fill: #00F0FF; letter-spacing: 0.5px; }
   </style>
 
-  <rect x="5" y="5" width="230" height="260" rx="10" fill="url(#pBgAR)" stroke="#261A3B" stroke-width="1.5"/>
-  <rect x="5" y="5" width="230" height="260" rx="10" fill="none" stroke="#00F0FF" stroke-opacity="0.25" stroke-width="1"/>
+  <rect x="6" y="6" width="248" height="248" rx="10" fill="url(#pSlotBgAR)" stroke="#261A3B" stroke-width="1.5"/>
+  <rect x="12" y="12" width="236" height="236" rx="8" fill="none" stroke="#00F0FF" stroke-width="1.5" stroke-dasharray="6,4" stroke-opacity="0.6"/>
 
-  <path d="M 5 20 L 5 5 L 20 5" fill="none" stroke="#00F0FF" stroke-width="2"/>
-  <path d="M 220 5 L 235 5 L 235 20" fill="none" stroke="#00F0FF" stroke-width="2"/>
-  <path d="M 5 250 L 5 265 L 20 265" fill="none" stroke="#00F0FF" stroke-width="2"/>
-  <path d="M 220 265 L 235 265 L 235 250" fill="none" stroke="#00F0FF" stroke-width="2"/>
+  <path d="M 6 20 L 6 6 L 20 6" fill="none" stroke="#00F0FF" stroke-width="2"/>
+  <path d="M 240 6 L 254 6 L 254 20" fill="none" stroke="#00F0FF" stroke-width="2"/>
+  <path d="M 6 240 L 6 254 L 20 254" fill="none" stroke="#00F0FF" stroke-width="2"/>
+  <path d="M 240 254 L 254 254 L 254 240" fill="none" stroke="#00F0FF" stroke-width="2"/>
 
-  <!-- Pathway Header -->
-  <rect x="25" y="16" width="190" height="18" rx="4" fill="#00F0FF" fill-opacity="0.12" stroke="#00F0FF" stroke-width="0.8"/>
-  <text x="120" y="29" class="p-tag" text-anchor="middle">LEARNING PATHWAY</text>
+  <!-- Slot Header -->
+  <text x="130" y="30" class="p-tag" text-anchor="middle">LEARNING PATHWAY</text>
+  <line x1="25" y1="38" x2="235" y2="38" stroke="#261A3B" stroke-width="1"/>
 
-  <!-- Unity Pathway Emblem Motif -->
-  <g transform="translate(120, 88)">
-    <polygon points="0,-40 35,-20 35,20 0,40 -35,20 -35,-20" fill="#18112B" stroke="#00F0FF" stroke-width="1.6" filter="url(#arGlow)"/>
-    <polygon points="0,-20 18,-10 18,10 0,20 -18,10 -18,-10" fill="url(#pARGrad)" fill-opacity="0.3" stroke="#00FFA3" stroke-width="1.2"/>
-    <line x1="0" y1="0" x2="0" y2="20" stroke="#00FFA3" stroke-width="1"/>
-    <line x1="0" y1="0" x2="-18" y2="-10" stroke="#00FFA3" stroke-width="1"/>
-    <line x1="0" y1="0" x2="18" y2="-10" stroke="#00FFA3" stroke-width="1"/>
-    <circle cx="0" cy="0" r="2.5" fill="#FFFFFF"/>
+  <!-- Center Placeholder Target Area -->
+  <g transform="translate(130, 92)">
+    <rect x="-40" y="-30" width="80" height="60" rx="6" fill="#18112B" stroke="#00F0FF" stroke-width="1" stroke-dasharray="4,3" stroke-opacity="0.5"/>
+    <line x1="-50" y1="0" x2="50" y2="0" stroke="#00F0FF" stroke-width="0.8" stroke-opacity="0.3"/>
+    <line x1="0" y1="-40" x2="0" y2="40" stroke="#00F0FF" stroke-width="0.8" stroke-opacity="0.3"/>
+    <path d="M 0 -10 L 0 8 M -6 -2 L 0 -10 L 6 -2" fill="none" stroke="#00FFA3" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-12" y1="12" x2="12" y2="12" stroke="#00FFA3" stroke-width="2" stroke-linecap="round"/>
+    <text x="0" y="24" class="p-meta" text-anchor="middle" font-size="7" fill="#00F0FF">AWAITING PNG</text>
   </g>
 
-  <text x="120" y="152" class="p-brand" text-anchor="middle">UNITY LEARN</text>
-  <text x="120" y="172" class="p-title" text-anchor="middle">MOBILE AR DEV</text>
-  <text x="120" y="190" class="p-status" text-anchor="middle">● PATHWAY COMPLETED</text>
+  <!-- Credential Details -->
+  <text x="130" y="148" class="p-issuer" text-anchor="middle">UNITY LEARN</text>
+  <text x="130" y="166" class="p-title" text-anchor="middle">MOBILE AR DEV</text>
+  <text x="130" y="180" class="p-meta" text-anchor="middle" fill="#00F0FF">● PATHWAY COMPLETED</text>
 
-  <line x1="25" y1="208" x2="215" y2="208" stroke="#261A3B" stroke-width="1"/>
+  <line x1="25" y1="194" x2="235" y2="194" stroke="#261A3B" stroke-width="1"/>
 
-  <text x="120" y="228" class="p-note" text-anchor="middle">REPLACE WITH BADGE PNG AT:</text>
-  <text x="120" y="242" class="p-note" fill="#00F0FF" text-anchor="middle">pathway-mobile-ar.png</text>
+  <!-- Placeholder Disclaimer & Filename instructions -->
+  <text x="130" y="210" class="p-warn" text-anchor="middle">[ PLACEHOLDER SLOT ]</text>
+  <text x="130" y="224" class="p-file" text-anchor="middle">TARGET: pathway-mobile-ar.png</text>
 </svg>

@@ -219,26 +219,31 @@ STATUS   : BUILDING THE FUTURE
 ## 🎖️ UNITY CREDENTIALS // VERIFIED PROGRESS
 
 <p>
-Official credentials and learning pathway milestones validated through Unity Technologies, proving technical proficiency in real-time 3D game architecture, C# programming, and spatial computing.
+Official credentials and learning pathway milestones validated through <b>Unity Technologies</b>, demonstrating verified competency in real-time 3D game architecture, C# programming systems, and spatial computing.
 </p>
+
+> [!NOTE]
+> **Credential Presentation Notice:** The cards below serve as temporary HUD placeholder slots until genuine badge image exports from Credly/Unity Learn are dropped into `assets/unity-badges/`. See [`README-ASSET-GUIDE.md`](README-ASSET-GUIDE.md) for easy replacement instructions.
 
 ### 🔹 Official Certified Associate Credentials
 <div align="center">
-  <table>
+  <table width="100%">
     <tr>
-      <td align="center" width="50%">
-        <img src="assets/unity-badges/associate-game-developer.svg" width="240" alt="Unity Certified Associate Game Developer" />
+      <td align="center" width="50%" valign="top">
+        <img src="assets/unity-badges/associate-game-developer.svg" width="220" alt="[Placeholder Slot] Unity Certified Associate Game Developer" />
         <br/>
         <b>Unity Certified Associate</b><br/>
         <code>GAME DEVELOPER</code><br/>
-        <small><i>Certified Associate Qualification</i></small>
+        <small><i>Issuer: Unity Technologies • Level: Associate</i></small><br/>
+        <small><code>[ HUD PLACEHOLDER SLOT — AWAITING CREDLY PNG ]</code></small>
       </td>
-      <td align="center" width="50%">
-        <img src="assets/unity-badges/associate-programmer.svg" width="240" alt="Unity Certified Associate Programmer" />
+      <td align="center" width="50%" valign="top">
+        <img src="assets/unity-badges/associate-programmer.svg" width="220" alt="[Placeholder Slot] Unity Certified Associate Programmer" />
         <br/>
         <b>Unity Certified Associate</b><br/>
         <code>PROGRAMMER</code><br/>
-        <small><i>Certified Associate Qualification</i></small>
+        <small><i>Issuer: Unity Technologies • Level: Associate</i></small><br/>
+        <small><code>[ HUD PLACEHOLDER SLOT — AWAITING CREDLY PNG ]</code></small>
       </td>
     </tr>
   </table>
@@ -248,34 +253,47 @@ Official credentials and learning pathway milestones validated through Unity Tec
 
 ### 🔸 Unity Learning Pathway Milestones
 <div align="center">
-  <table>
+  <table width="100%">
     <tr>
-      <td align="center" width="25%">
-        <img src="assets/unity-badges/pathway-essentials.svg" width="200" alt="Unity Essentials Pathway" /><br/>
+      <td align="center" width="25%" valign="top">
+        <img src="assets/unity-badges/pathway-essentials.svg" width="180" alt="[Placeholder Slot] Unity Essentials Pathway" /><br/>
         <b>Unity Essentials</b><br/>
-        <small><code>FOUNDATIONS</code></small>
+        <small><code>FOUNDATIONS</code></small><br/>
+        <small><code>[ PLACEHOLDER SLOT ]</code></small>
       </td>
-      <td align="center" width="25%">
-        <img src="assets/unity-badges/pathway-junior-programmer.svg" width="200" alt="Unity Junior Programmer Pathway" /><br/>
+      <td align="center" width="25%" valign="top">
+        <img src="assets/unity-badges/pathway-junior-programmer.svg" width="180" alt="[Placeholder Slot] Unity Junior Programmer Pathway" /><br/>
         <b>Junior Programmer</b><br/>
-        <small><code>SYSTEMS &amp; LOGIC</code></small>
+        <small><code>SYSTEMS &amp; LOGIC</code></small><br/>
+        <small><code>[ PLACEHOLDER SLOT ]</code></small>
       </td>
-      <td align="center" width="25%">
-        <img src="assets/unity-badges/pathway-mobile-ar.svg" width="200" alt="Unity Mobile AR Development Pathway" /><br/>
+      <td align="center" width="25%" valign="top">
+        <img src="assets/unity-badges/pathway-mobile-ar.svg" width="180" alt="[Placeholder Slot] Unity Mobile AR Development Pathway" /><br/>
         <b>Mobile AR Dev</b><br/>
-        <small><code>PLANE &amp; SPATIAL ANCHORS</code></small>
+        <small><code>SPATIAL ANCHORS</code></small><br/>
+        <small><code>[ PLACEHOLDER SLOT ]</code></small>
       </td>
-      <td align="center" width="25%">
-        <img src="assets/unity-badges/pathway-vr-development.svg" width="200" alt="Unity VR Development Pathway" /><br/>
+      <td align="center" width="25%" valign="top">
+        <img src="assets/unity-badges/pathway-vr-development.svg" width="180" alt="[Placeholder Slot] Unity VR Development Pathway" /><br/>
         <b>VR Development</b><br/>
-        <small><code>XR TOOLKIT &amp; HEADSETS</code></small>
+        <small><code>XR TOOLKIT &amp; HEADSETS</code></small><br/>
+        <small><code>[ PLACEHOLDER SLOT ]</code></small>
       </td>
     </tr>
   </table>
 </div>
 
-> [!NOTE]
-> *To replace these vector cards with your official Credly or Unity Learn PNG badge exports, place them into `assets/unity-badges/`. See [`README-ASSET-GUIDE.md`](README-ASSET-GUIDE.md) for full instructions.*
+<br/>
+
+#### 📋 Verified Credential Specifications
+| Credential Name | Credential Type | Issuing Authority | Core Competencies Validated |
+| :--- | :--- | :--- | :--- |
+| **Unity Certified Associate: Game Developer** | Professional Certification | Unity Technologies | 2D/3D Game Mechanics, Scene &amp; Level Staging, Asset Integration, UI |
+| **Unity Certified Associate: Programmer** | Professional Certification | Unity Technologies | C# OOP, Logic Systems, Debugging, Physics, Math for 3D Games |
+| **Unity Essentials Pathway** | Learning Pathway | Unity Learn | Engine Architecture, Editor Navigation, Real-Time 3D Principles |
+| **Junior Programmer Pathway** | Learning Pathway | Unity Learn | Scripting Architecture, Events, State Machines, Systems Design |
+| **Mobile AR Development Pathway** | Learning Pathway | Unity Learn | AR Foundation, Plane Detection, Camera Tracking, Spatial Anchoring |
+| **VR Development Pathway** | Learning Pathway | Unity Learn | XR Interaction Toolkit, OpenXR, Controller &amp; Hand Input, Locomotion |
 
 <br/>
 
@@ -387,7 +405,7 @@ Official credentials and learning pathway milestones validated through Unity Tec
       <ul>
         <li><b>Precision Platforming:</b> Custom character movement and jump arcs across precarious floating bridges.</li>
         <li><b>Dynamic Third-Person Camera:</b> Tension-inducing perspective that emphasizes heights and sudden drops.</li>
-        <li><b>Timing &amp; Scoring Engine:</b> Calculates exact completion velocity ($t_{\text{finish}} - t_{\text{start}}$) with instantaneous retry loops.</li>
+        <li><b>Timing &amp; Scoring Engine:</b> Calculates exact completion velocity (<code>t<sub>finish</sub> - t<sub>start</sub></code>) with instantaneous retry loops.</li>
         <li><b>Bitmoji Integration:</b> Renders personalized avatars directly into real-time 3D competitive gameplay.</li>
       </ul>
       <p>
