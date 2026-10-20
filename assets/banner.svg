@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" width="1000" height="400">
   <defs>
     <!-- Background Gradients -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -7,7 +7,6 @@
       <stop offset="100%" stop-color="#050811"/>
     </linearGradient>
 
-    <!-- Neon Cyan Gradient -->
     <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00F0FF"/>
       <stop offset="50%" stop-color="#7000FF"/>
@@ -19,14 +18,9 @@
       <stop offset="100%" stop-color="#00FFA3"/>
     </linearGradient>
 
-    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#9D4EDD" stop-opacity="0.1"/>
-    </linearGradient>
-
     <!-- Glow Filters -->
     <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -34,7 +28,7 @@
     </filter>
 
     <filter id="magentaGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -45,11 +39,6 @@
     <pattern id="techGrid" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0E1A2F" stroke-width="0.8"/>
       <circle cx="0" cy="0" r="1.2" fill="#00F0FF" fill-opacity="0.25"/>
-    </pattern>
-
-    <!-- Isometric Cube Pattern for Unity/3D motif -->
-    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1" fill="#1C2D4A" />
     </pattern>
   </defs>
 
@@ -62,13 +51,13 @@
       fill: #FFFFFF;
     }
     .hud-code {
-      font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+      font-family: 'Fira Code', 'Cascadia Code', 'Consolas', 'Monaco', monospace;
       font-size: 11px;
-      letter-spacing: 2.5px;
+      letter-spacing: 2px;
       fill: #00F0FF;
     }
     .hud-meta {
-      font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+      font-family: 'Fira Code', 'Cascadia Code', 'Consolas', 'Monaco', monospace;
       font-size: 10px;
       letter-spacing: 1.5px;
       fill: #6E88B5;
@@ -77,12 +66,12 @@
       font-family: 'Segoe UI', -apple-system, sans-serif;
       font-weight: 700;
       font-size: 13px;
-      letter-spacing: 3px;
+      letter-spacing: 2.5px;
       fill: #00F0FF;
     }
     .tagline-text {
       font-family: 'Montserrat', 'Segoe UI', sans-serif;
-      font-weight: 500;
+      font-weight: 600;
       font-style: italic;
       font-size: 19px;
       letter-spacing: 1.5px;
@@ -96,12 +85,8 @@
       fill: #94A3B8;
     }
     @keyframes pulseGlow {
-      0%, 100% { opacity: 0.8; }
-      50% { opacity: 0.35; }
-    }
-    @keyframes scanline {
-      0% { transform: translateY(0); }
-      100% { transform: translateY(400px); }
+      0%, 100% { opacity: 0.85; }
+      50% { opacity: 0.4; }
     }
     .pulsing {
       animation: pulseGlow 3s infinite ease-in-out;
@@ -119,15 +104,12 @@
 
   <!-- Holographic Wireframe Cube (Unity / 3D Motif) -->
   <g transform="translate(840, 185) scale(0.95)" stroke="#00F0FF" stroke-opacity="0.35" stroke-width="1.2" fill="none">
-    <!-- Isometric Cube Outer -->
     <path d="M 0 -70 L 60 -35 L 60 35 L 0 70 L -60 35 L -60 -35 Z" stroke="#00F0FF" stroke-opacity="0.6"/>
     <path d="M 0 -70 L 0 70" stroke="#9D4EDD" stroke-opacity="0.4"/>
     <path d="M -60 -35 L 60 35" stroke="#00F0FF" stroke-opacity="0.3"/>
     <path d="M 60 -35 L -60 35" stroke="#00F0FF" stroke-opacity="0.3"/>
-    <!-- Inner Core -->
     <circle cx="0" cy="0" r="14" fill="#00F0FF" fill-opacity="0.15" stroke="#00FFA3" stroke-width="1.5"/>
     <circle cx="0" cy="0" r="4" fill="#00F0FF" filter="url(#cyanGlow)"/>
-    <!-- Orbit Rings -->
     <ellipse cx="0" cy="0" rx="75" ry="32" stroke="#9D4EDD" stroke-opacity="0.45" stroke-dasharray="4,6" transform="rotate(-25)"/>
     <ellipse cx="0" cy="0" rx="75" ry="32" stroke="#00F0FF" stroke-opacity="0.4" stroke-dasharray="3,5" transform="rotate(35)"/>
   </g>
@@ -148,16 +130,12 @@
   <rect x="28" y="28" width="944" height="344" rx="10" fill="none" stroke="#00F0FF" stroke-opacity="0.18" stroke-width="1"/>
 
   <!-- Precision HUD Corner Brackets -->
-  <!-- Top-Left -->
   <path d="M 20 55 L 20 20 L 55 20" fill="none" stroke="#00F0FF" stroke-width="3" stroke-linecap="round" filter="url(#cyanGlow)"/>
   <circle cx="20" cy="20" r="2.5" fill="#00FFA3"/>
-  <!-- Top-Right -->
   <path d="M 945 20 L 980 20 L 980 55" fill="none" stroke="#9D4EDD" stroke-width="3" stroke-linecap="round" filter="url(#magentaGlow)"/>
   <circle cx="980" cy="20" r="2.5" fill="#FF007F"/>
-  <!-- Bottom-Left -->
   <path d="M 20 345 L 20 380 L 55 380" fill="none" stroke="#9D4EDD" stroke-width="3" stroke-linecap="round" filter="url(#magentaGlow)"/>
   <circle cx="20" cy="380" r="2.5" fill="#FF007F"/>
-  <!-- Bottom-Right -->
   <path d="M 945 380 L 980 380 L 980 345" fill="none" stroke="#00F0FF" stroke-width="3" stroke-linecap="round" filter="url(#cyanGlow)"/>
   <circle cx="980" cy="380" r="2.5" fill="#00FFA3"/>
 
@@ -180,18 +158,14 @@
   <line x1="45" y1="64" x2="280" y2="64" stroke="#00F0FF" stroke-width="1.5" stroke-opacity="0.7"/>
 
   <!-- Center Content Area -->
-  <!-- Category Prefix -->
   <g transform="translate(70, 98)">
     <text x="0" y="0" class="hud-code" fill="#00F0FF">/// COMMAND CENTER // OPERATOR PROFILE</text>
   </g>
 
   <!-- MAIN NAME -->
   <g transform="translate(70, 160)">
-    <!-- Cyan glow drop shadow -->
     <text x="2" y="2" class="title-name" fill="#00F0FF" fill-opacity="0.25" filter="url(#cyanGlow)">REVA BHAVSAR</text>
-    <!-- Sharp Front Text -->
     <text x="0" y="0" class="title-name">REVA BHAVSAR</text>
-    <!-- Cyberpunk accent mark -->
     <rect x="615" y="-48" width="12" height="12" fill="#00F0FF" filter="url(#cyanGlow)"/>
     <rect x="635" y="-48" width="28" height="3" fill="#9D4EDD"/>
   </g>
@@ -226,7 +200,6 @@
   <line x1="680" y1="335" x2="955" y2="335" stroke="#9D4EDD" stroke-width="1.5" stroke-opacity="0.8"/>
 
   <g transform="translate(45, 358)">
-    <!-- Telemetry Indicators -->
     <text x="0" y="0" class="hud-meta">PRIMARY ENGINE:</text>
     <text x="105" y="0" class="hud-code" fill="#E2E8F0">UNITY 3D (URP/HDRP)</text>
 

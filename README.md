@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- HERO BANNER -->
-<img src="assets/banner.svg" alt="Reva Bhavsar — Unity Developer & XR Engineer Banner" width="100%" />
+<img src="./assets/banner.svg" alt="Reva Bhavsar — Unity Developer & XR Engineer Banner" width="100%" />
 
 <br/>
 
@@ -36,7 +36,7 @@
   </a>
 </p>
 
-<img src="assets/hud/divider-cyan.svg" width="100%" alt="HUD Divider" />
+<img src="./assets/hud/divider-cyan.svg" width="100%" alt="HUD Divider" />
 
 </div>
 
@@ -49,7 +49,7 @@
 ## ⚡ REVA_OS // COMMAND TERMINAL
 
 <div align="center">
-  <img src="assets/terminal.svg" alt="REVA_OS Developer Console" width="100%" />
+  <img src="./assets/terminal.svg" alt="REVA_OS Developer Console" width="100%" />
 </div>
 
 <details>
@@ -78,7 +78,7 @@ STATUS    : READY TO BUILD
 <br/>
 
 <div align="center">
-  <img src="assets/hud/divider-purple.svg" width="100%" alt="HUD Divider" />
+  <img src="./assets/hud/divider-purple.svg" width="100%" alt="HUD Divider" />
 </div>
 
 <br/>
@@ -163,7 +163,7 @@ STATUS    : READY TO BUILD
 <br/>
 
 <div align="center">
-  <img src="assets/hud/divider-cyan.svg" width="100%" alt="HUD Divider" />
+  <img src="./assets/hud/divider-cyan.svg" width="100%" alt="HUD Divider" />
 </div>
 
 <br/>
@@ -191,29 +191,17 @@ STATUS    : READY TO BUILD
           <b>📜 Unity Certified Associate: Programmer</b><br/>
           Industry certification validating C# object-oriented programming, debugging, algorithms, and Unity API mastery.
         </li>
-        <li>
-          <b>⭐ Academic Excellence &amp; Best Project Awards</b><br/>
-          Consistently recognized for top performance in software architecture, robotics kinematics, and creative tech.
-        </li>
       </ul>
     </td>
     <td width="50%" valign="top">
       <h4>💼 EXPERIENCE &amp; EDUCATION</h4>
       <ul>
         <li>
-          <b>XR Intern — FireBird VR</b> <i>(Jan 2026 – Present)</i><br/>
+          <b>XR Developer Intern — FireBird VR</b> <i>(December 2025 – Present)</i><br/>
           Developing cutting-edge AR/VR enterprise and educational applications, optimizing XR interaction pipelines.
         </li>
         <li>
-          <b>Project Manager Intern — Invictosonic Solution</b> <i>(2025)</i><br/>
-          Led industrial automation documentation, cross-team engineering coordination, and workflow execution.
-        </li>
-        <li>
-          <b>Frontend &amp; Graphics Developer — NPIT Solutions</b> <i>(2022)</i><br/>
-          Built and deployed 3 responsive web applications with interactive graphics and clean database structures.
-        </li>
-        <li>
-          <b>B.Tech in Automation &amp; Robotics — JSPM RSCOE, Pune</b> <i>(2023 – 2026)</i><br/>
+          <b>B.Tech in Automation &amp; Robotics — JSPM RSCOE, Pune</b> <i>(Class of 2026)</i><br/>
           Specializing in hardware-software integration, spatial robotics simulation, and game engineering.
         </li>
         <li>
@@ -228,7 +216,7 @@ STATUS    : READY TO BUILD
 <br/>
 
 <div align="center">
-  <img src="assets/hud/divider-purple.svg" width="100%" alt="HUD Divider" />
+  <img src="./assets/hud/divider-purple.svg" width="100%" alt="HUD Divider" />
 </div>
 
 <br/>
@@ -240,7 +228,7 @@ STATUS    : READY TO BUILD
 ## 🐍 CONTRIBUTION SNAKE // MY ACTIVITY
 
 <div align="center">
-  <img src="assets/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake Animation" width="100%" />
+  <img src="./assets/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake Animation" width="100%" />
 
   <p align="center">
     <small><code>Automated via GitHub Actions (.github/workflows/snake.yml) • Refreshed daily at 00:00 UTC</code></small>
@@ -250,7 +238,7 @@ STATUS    : READY TO BUILD
 <br/>
 
 <div align="center">
-  <img src="assets/hud/divider-cyan.svg" width="100%" alt="HUD Divider" />
+  <img src="./assets/hud/divider-cyan.svg" width="100%" alt="HUD Divider" />
 </div>
 
 <br/>
