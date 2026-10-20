@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 24" width="100%" height="24">
+  <defs>
+    <linearGradient id="divPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9D4EDD" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#9D4EDD" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#FF007F" stop-opacity="1"/>
+      <stop offset="75%" stop-color="#9D4EDD" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#9D4EDD" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="pGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <line x1="50" y1="12" x2="850" y2="12" stroke="url(#divPurple)" stroke-width="1.5" filter="url(#pGlow)"/>
+  <polygon points="450,6 456,12 450,18 444,12" fill="#FF007F" filter="url(#pGlow)"/>
+  <circle cx="410" cy="12" r="2.5" fill="#9D4EDD"/>
+  <circle cx="490" cy="12" r="2.5" fill="#9D4EDD"/>
+  <rect x="360" y="10" width="20" height="4" fill="#9D4EDD" fill-opacity="0.4"/>
+  <rect x="520" y="10" width="20" height="4" fill="#9D4EDD" fill-opacity="0.4"/>
+</svg>
